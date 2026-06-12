@@ -10,7 +10,7 @@
 
 The following sequence diagram outlines the core state management and background watchdog logic.
 
-```mermaid.js
+```mermaid
 sequenceDiagram
     actor Admin
     participant Device
