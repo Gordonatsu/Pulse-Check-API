@@ -10,7 +10,7 @@
 
 The following sequence diagram outlines the core state management and background watchdog logic.
 
-```mermaid
+```mermaid.js
 sequenceDiagram
     actor Admin
     participant Device
@@ -74,23 +74,23 @@ Once the server is running, you can interact with the live interactive API docum
 ### Core Endpoints:
 - POST /monitors
 
-    * Description: Register a new device monitor and start the countdown timer.
+    * **Description:** Register a new device monitor and start the countdown timer.
 
-    * Payload: {"id": "device-123", "timeout": 60, "alert_email": "admin@critmon.com"}
+    * **Payload:** {"id": "device-123", "timeout": 60, "alert_email": "admin@critmon.com"}
 
-    * Response: 201 Created
+    * **Response:** 201 Created
 
 - POST /monitors/{id}/heartbeat
 
-    * Description: Send a ping from a remote device to reset its countdown timer. If the device was paused, this automatically un-pauses it.
+    * **Description:** Send a ping from a remote device to reset its countdown timer. If the device was paused, this automatically un-pauses it.
 
-    * Response: 200 OK
+    * **Response:** 200 OK
 
 - POST /monitors/{id}/pause
 
-    * Description: (Bonus Feature) Suspends the timer for maintenance without triggering alerts. Changes device status to paused.
+    * **Description:** Suspends the timer for maintenance without triggering alerts. Changes device status to paused.
 
-    * Response: 200 OK
+    * **Response:** 200 OK
 
 ## 4. System Dashboard
 
