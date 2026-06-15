@@ -42,7 +42,7 @@ This application is built using Python 3 and FastAPI.
 ### 1. Clone and Navigate:
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/Gordonatsu/Pulse-Check-API/tree/main
 cd pulse-check-api
 ```
 
